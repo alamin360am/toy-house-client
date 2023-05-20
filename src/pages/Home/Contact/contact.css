@@ -1,0 +1,13 @@
+.section-contact {
+    background: #dbe4ee;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 3.6rem;
+}

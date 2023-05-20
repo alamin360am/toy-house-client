@@ -29,7 +29,8 @@ form {
     gap: 1rem;
 }
 
-form input {
+form input,
+form textarea {
     border: none;
     outline: none;
     padding: 1.4rem;
@@ -40,7 +41,8 @@ form input {
     background-color: rgb(232, 240, 254);
 }
 
-form input:focus {
+form input:focus,
+form textarea:focus {
     background-color: #fff;
 }
 
