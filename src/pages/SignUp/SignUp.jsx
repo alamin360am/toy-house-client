@@ -3,8 +3,11 @@ import './signup.css'
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
 import { faInfo, faLock, faPhotoFilm } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const SignUp = () => {
+    useTitle('Sign Up')
+
     return (
         <section className="section-auth">
             <div className="icon-box">
