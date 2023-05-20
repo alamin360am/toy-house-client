@@ -41,6 +41,23 @@ section {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.btn {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #00509D;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: #00296B;
+}
+
+/* Responsive */
+
 @media screen and (max-width: 768px) {
   .col-2, .col-3, .col-4 {
     grid-template-columns: repeat(1, 1fr);
