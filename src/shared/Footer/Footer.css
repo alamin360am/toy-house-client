@@ -1,0 +1,32 @@
+footer {
+    padding: 5rem 10rem;
+    background-color: #212529;
+    color: #fff;
+}
+
+footer.grid {
+    place-items: center;
+}
+
+footer .box {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .box p {
+    color: #d5d5d5;
+}
+
+footer .box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+    footer {padding: 3rem 5rem;}
+}
+
+@media screen and (max-width: 768px) {
+    footer {padding: 1rem 2rem;}
+}

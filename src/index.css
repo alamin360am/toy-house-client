@@ -56,16 +56,14 @@ section {
   background-color: #00296B;
 }
 
+.secondary-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Responsive */
 
-@media screen and (max-width: 768px) {
-  .col-2, .col-3, .col-4 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  section {
-    padding: 1rem 2rem;
-  }
-}
+
 
 @media screen and (max-width: 991px) {
   .col-3, .col-4 {
@@ -73,5 +71,14 @@ section {
   }
   section {
     padding: 2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-2, .col-3, .col-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section {
+    padding: 1rem 2rem;
   }
 }
