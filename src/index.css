@@ -49,11 +49,18 @@ section {
   background-color: #00509D;
   color: #fff;
   border-radius: 8px;
+  cursor: pointer;
   transition: all 0.4s;
 }
 
 .btn:hover {
   background-color: #00296B;
+}
+
+.primary-heading {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .secondary-heading {

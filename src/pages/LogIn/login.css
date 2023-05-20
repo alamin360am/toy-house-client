@@ -1,0 +1,60 @@
+.section-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #dbe4ee;
+}
+
+.section-login .icon-box {
+    background-color: #00296B;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1.5rem solid #a7c9ff;
+}
+
+.section-login .icon {
+    color: #f0f8ff;
+    font-size: 10rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input {
+    border: none;
+    outline: none;
+    padding: 1.4rem;
+    padding-left: 4.5rem;
+    width: 50rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+
+form p {
+    margin: 1rem 0;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translate(-50%, -50%);
+}
+
+.input-field label .input-icon {
+    font-size: 2rem;
+    color: #00296B;
+}
