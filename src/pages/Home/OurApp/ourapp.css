@@ -1,0 +1,22 @@
+.section-app .secondary-heading {
+    color: #00296B;
+    text-align: center;
+}
+
+.section-app .section-info {
+    color: #555;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.section-app .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-app .app img {
+    width: 50%;
+}
