@@ -23,6 +23,23 @@ footer .box a {
     color: #fff;
 }
 
+footer .social .links {
+    display: flex;
+    gap: 2rem;
+}
+
+footer .social .links img {
+    width: 3rem;
+    filter: brightness(0.5);
+    opacity: 50%;
+    transition: all 0.4s;
+}
+
+footer .social .links img:hover {
+    filter: brightness(1);
+    opacity: 100%;
+}
+
 @media screen and (max-width: 991px) {
     footer {padding: 3rem 5rem;}
 }

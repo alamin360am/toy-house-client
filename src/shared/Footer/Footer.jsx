@@ -1,5 +1,9 @@
 import './Footer.css'
 import logo from './../../../public/logo.png'
+import facebook from './../../../public/icon/facebook.png'
+import twitter from './../../../public/icon/twitter.png'
+import youtube from './../../../public/icon/youtube.png'
+import instagram from './../../../public/icon/instagram.png'
 
 const Footer = () => {
     return (
@@ -31,10 +35,18 @@ const Footer = () => {
             <div className="social">
                 <h3 className="secondary-heading">Social Link</h3>
                 <div className="links">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="#">
+                        <img src={facebook} alt="" />
+                    </a>
+                    <a href="#">
+                        <img src={twitter} alt="" />
+                    </a>
+                    <a href="#">
+                        <img src={youtube} alt="" />
+                    </a>
+                    <a href="#">
+                        <img src={instagram} alt="" />
+                    </a>
                 </div>
             </div>
         </footer>
