@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="user-box">
                     <div className="user-img"></div>
                     <Link to='/login' className='btn'>Log In</Link>
-                    <Link to='/logout' className='btn'>Log out</Link>
+                    <Link className='btn'>Log out</Link>
                 </div>
             </nav>
         </header>

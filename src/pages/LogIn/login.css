@@ -1,4 +1,4 @@
-.section-login {
+.section-auth {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@
     background: #dbe4ee;
 }
 
-.section-login .icon-box {
+.section-auth .icon-box {
     background-color: #00296B;
     height: 20rem;
     width: 20rem;
@@ -18,7 +18,7 @@
     border: 1.5rem solid #a7c9ff;
 }
 
-.section-login .icon {
+.section-auth .icon {
     color: #f0f8ff;
     font-size: 10rem;
 }
@@ -37,6 +37,11 @@ form input {
     width: 50rem;
     font-size: 1.6rem;
     border-radius: 5px;
+    background-color: rgb(232, 240, 254);
+}
+
+form input:focus {
+    background-color: #fff;
 }
 
 form p {

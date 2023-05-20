@@ -6,7 +6,7 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 const LogIn = () => {
   return (
-    <section className="section-login">
+    <section className="section-auth">
       <div className="icon-box">
         <FontAwesomeIcon icon={faUser} className="icon"></FontAwesomeIcon>
       </div>
