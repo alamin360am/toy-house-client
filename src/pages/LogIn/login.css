@@ -63,3 +63,26 @@ form p {
     font-size: 2rem;
     color: #00296B;
 }
+
+.google {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #dc2f02;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    cursor: pointer;
+}
+
+.google img {
+    width: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section-auth .icon-box {
+        width: 15rem;
+        height: 15rem;
+    }
+    .section-auth .icon {font-size: 7rem;}
+    form input {width: 40rem;}
+}

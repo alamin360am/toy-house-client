@@ -37,7 +37,7 @@ const SignUp = () => {
                     <input type="text" name="photo" id="photo" placeholder="Input your Photo URL" />
                 </div>
                 <p>Already have an account? <Link to='/login'>Log in</Link></p>
-                <input type="submit" value="Log In" className="btn" />
+                <input type="submit" value="Sign Up" className="btn" />
         </form>
     </section>
     );

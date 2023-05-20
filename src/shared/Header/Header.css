@@ -1,5 +1,6 @@
 header {
     padding: 2rem 10rem;
+    position: relative;
 }
 
 nav {
@@ -52,4 +53,43 @@ nav .user-box .user-img {
     width: 5rem;
     border-radius: 50%;
     background: #000;
+}
+
+/* conditional */
+nav .icon-box {
+    display: none;
+}
+
+nav .icon-box .icon {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+nav .nav-link.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    background-color: #fff;
+    padding: 2rem;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 2rem;
+    }
+    nav .nav-logo span {
+        visibility: hidden;
+    }
+    nav .nav-logo {
+        width: 5rem;
+    }
+    nav .nav-link {
+        display: none;
+    }
+    nav .icon-box {
+        display: block;
+    }
 }

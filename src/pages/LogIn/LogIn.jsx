@@ -3,6 +3,7 @@ import "./login.css";
 import { faEnvelope, faUser } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
+import google from './../../../public/icon/google.png'
 
 const LogIn = () => {
   return (
@@ -27,6 +28,10 @@ const LogIn = () => {
         <p>New User? <Link to='/signup'>Sign Up Now</Link></p>
         <input type="submit" value="Log In" className="btn" />
       </form>
+      <div className="google">
+        <img src={google} alt="" />
+        <p>Log in with Google</p>
+      </div>
     </section>
   );
 };
