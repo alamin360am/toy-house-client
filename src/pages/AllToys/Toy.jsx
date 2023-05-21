@@ -12,7 +12,7 @@ const Toy = ({toy}) => {
                 <p className="information">Quantity: <span>{Quantity}</span></p>
                 <p className="price">Price: $ <span>{price}</span></p>
             </div>
-            <Link to={`/category/${_id}`} className="btn">View Details</Link>
+            <Link to={`/toy/${_id}`} className="btn">View Details</Link>
         </div>
     );
 };
