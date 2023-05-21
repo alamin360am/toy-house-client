@@ -1,0 +1,47 @@
+[
+  {
+    "id": "car01",
+    "name": "Red Racer",
+    "color": "red",
+    "price": 19.99,
+    "ratings": 4.5,
+    "sub-category": "Bike"
+  },
+  {
+    "id": "car02",
+    "name": "Blue Cruiser",
+    "color": "blue",
+    "price": 24.99,
+    "ratings": 4.9,
+    "sub-category": "Bike"
+  },
+  {
+    "id": "car03",
+    "name": "Yellow Speedster",
+    "color": "yellow",
+    "price": 29.99,
+    "ratings": 4.8,
+    "sub-category": "Car"
+  },
+  {
+    "id": "car04",
+    "name": "Green Off-Roader",
+    "color": "green",
+    "price": 16.99,
+    "sub-category": "Car"
+  },
+  {
+    "id": "car05",
+    "name": "Purple Convertible",
+    "color": "purple",
+    "price": 34.99,
+    "sub-category": "Ship"
+  },
+  {
+    "id": "car06",
+    "name": "Silver Sports Car",
+    "color": "silver",
+    "price": 39.99,
+    "sub-category": "Ship"
+  }
+]
