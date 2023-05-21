@@ -32,3 +32,14 @@
     font-weight: 400;
     color: #555;
 }
+
+@media screen and (max-width: 768px) {
+    .section-single-toy {
+        flex-direction: column;
+    }
+    
+    .toy-photo,
+    .toy-info {
+        width: 100%;
+    }
+}
