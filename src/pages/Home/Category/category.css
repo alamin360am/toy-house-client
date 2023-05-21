@@ -26,13 +26,15 @@
 }
 
 .ratings,
-.price {
+.price,
+.information {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .ratings span,
-.price span {
+.price span,
+.information span {
     color: #00509D;
 }
 

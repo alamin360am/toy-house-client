@@ -13,7 +13,7 @@ const Category = () => {
   const [ships, setShips] = useState([]);
 
   useEffect(() => {
-    fetch("fakedb.json")
+    fetch("http://localhost:5000/toys")
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, []);
@@ -41,21 +41,21 @@ const Category = () => {
         <TabPanel>
           <div className="grid col-3 tab-panel">
             {bikes.map((bike) => (
-              <Bikes key={bike.id} bike={bike}></Bikes>
+              <Bikes key={bike._id} bike={bike}></Bikes>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
           <div className="grid col-3 tab-panel">
             {cars.map((car) => (
-              <Cars key={car.id} car={car}></Cars>
+              <Cars key={car._id} car={car}></Cars>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
           <div className="grid col-3 tab-panel">
             {ships.map((ship) => (
-              <Ships key={ship.id} ship={ship}></Ships>
+              <Ships key={ship._id} ship={ship}></Ships>
             ))}
           </div>
         </TabPanel>

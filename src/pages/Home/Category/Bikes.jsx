@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import './category.css';
 
 const Bikes = (props) => {
-    const {name, price, ratings, photo} = props.bike;
+    const {_id, name, price, ratings, photo} = props.bike;
     return (
         <div className='card'>
             <div className="img-box">
@@ -12,7 +13,7 @@ const Bikes = (props) => {
                 <p className="ratings">Ratings: <span>{ratings}</span></p>
                 <p className="price">Price: $ <span>{price}</span></p>
             </div>
-            <button className="btn">View Details</button>
+            <Link to={`/category/${_id}`} className="btn">View Details</Link>
         </div>
     );
 };
