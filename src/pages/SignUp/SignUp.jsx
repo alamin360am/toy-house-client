@@ -4,11 +4,13 @@ import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
 import { faInfo, faLock, faPhotoFilm } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const SignUp = () => {
     useTitle('Sign Up');
+
+    const [error, setError] = useState('');
 
     const {createUser} = useContext(AuthContext)
 
@@ -20,6 +22,13 @@ const SignUp = () => {
         const password = form.password.value;
         const photo = form.photo.value;
 
+        if(password.length < 6) {
+            setError("Please input more than 6 digit password");
+            return;
+        }
+
+        setError('')
+
         createUser(email, password)
         .then(result =>{
             const user = result.user;
@@ -27,7 +36,7 @@ const SignUp = () => {
             user.photoURL = photo;
         })
         .catch(error =>{
-            console.log(error);
+            setError(error.message);
         });
     }
 
@@ -63,6 +72,7 @@ const SignUp = () => {
                     <input type="text" name="photo" id="photo" placeholder="Input your Photo URL" />
                 </div>
                 <p>Already have an account? <Link to='/login'>Log in</Link></p>
+                <p className='error'>{error}</p>
                 <input type="submit" value="Sign Up" className="btn" />
         </form>
     </section>
