@@ -33,6 +33,19 @@ const AddToy = () => {
             console.log(data);
         })
 
+        fetch('http://localhost:5000/added_toy', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            alert("Toy Added successfully")
+        })
+
 
     }
     return (
