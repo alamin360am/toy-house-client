@@ -53,6 +53,11 @@ nav .user-box .user-img {
     width: 5rem;
     border-radius: 50%;
     background: #000;
+    overflow: hidden;
+}
+
+nav .user-box .user-img img {
+    width: 100%;
 }
 
 /* conditional */

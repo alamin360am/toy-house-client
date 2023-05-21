@@ -20,16 +20,15 @@ const SignUp = () => {
         const password = form.password.value;
         const photo = form.photo.value;
 
-
-
         createUser(email, password)
         .then(result =>{
             const user = result.user;
-            console.log(user);
+            user.displayName = name;
+            user.photoURL = photo;
         })
         .catch(error =>{
             console.log(error);
-        })
+        });
     }
 
     return (

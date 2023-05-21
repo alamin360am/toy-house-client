@@ -47,8 +47,10 @@ const Header = () => {
           <NavLink to="/blog">Blogs</NavLink>
         </div>
         {user ? (
-          <div className="user-box">
-            <div className="user-img"></div>
+          <div className="user-box" title={user?.displayName}>
+            <div className="user-img">
+                <img src={user?.photoURL} alt="" />
+            </div>
             <Link to="/" onClick={handleSignOut} className="btn">
               Log out
             </Link>
