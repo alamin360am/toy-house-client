@@ -11,7 +11,11 @@ import { AuthContext } from "../../providers/AuthProvider";
 const LogIn = () => {
   useTitle("Log In");
 
-  const {signIn} = useContext(AuthContext);
+  const {signIn, googleSignIn} = useContext(AuthContext);
+
+  const googleSign = () => {
+    googleSignIn();
+  }
 
 
   const handleLogin = (event) => {
@@ -70,7 +74,7 @@ const LogIn = () => {
         </p>
         <input type="submit" value="Log In" className="btn" />
       </form>
-      <div className="google">
+      <div onClick={googleSign} className="google">
         <img src={google} alt="" />
         <p>Log in with Google</p>
       </div>
