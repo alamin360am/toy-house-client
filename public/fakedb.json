@@ -5,7 +5,8 @@
     "color": "red",
     "price": 19.99,
     "ratings": 4.5,
-    "sub-category": "Bike"
+    "sub_category": "Bike",
+    "photo": "https://i.postimg.cc/QttpzvyF/red-bike.jpg"
   },
   {
     "id": "car02",
@@ -13,7 +14,8 @@
     "color": "blue",
     "price": 24.99,
     "ratings": 4.9,
-    "sub-category": "Bike"
+    "sub_category": "Bike",
+    "photo": "https://i.postimg.cc/s2DrtJ9B/blue-bike.jpg"
   },
   {
     "id": "car03",
@@ -21,27 +23,31 @@
     "color": "yellow",
     "price": 29.99,
     "ratings": 4.8,
-    "sub-category": "Car"
+    "sub_category": "Car",
+    "photo": "https://i.postimg.cc/JzQ86FJV/yello-car.jpg"
   },
   {
     "id": "car04",
     "name": "Green Off-Roader",
     "color": "green",
     "price": 16.99,
-    "sub-category": "Car"
+    "sub_category": "Car",
+    "photo": "https://i.postimg.cc/y6w7kcB5/green-car.jpg"
   },
   {
     "id": "car05",
     "name": "Purple Convertible",
     "color": "purple",
     "price": 34.99,
-    "sub-category": "Ship"
+    "sub_category": "Ship",
+    "photo": "https://i.postimg.cc/X7d4FqYv/purple-ship.jpg"
   },
   {
     "id": "car06",
-    "name": "Silver Sports Car",
+    "name": "Silver Sports",
     "color": "silver",
     "price": 39.99,
-    "sub-category": "Ship"
+    "sub_category": "Ship",
+    "photo": "https://i.postimg.cc/QdDsqDFJ/silver-ship.jpg"
   }
 ]

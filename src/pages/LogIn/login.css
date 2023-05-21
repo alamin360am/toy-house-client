@@ -86,5 +86,5 @@ form p {
         height: 15rem;
     }
     .section-auth .icon {font-size: 7rem;}
-    form input {width: 40rem;}
+    form input, form textarea {width: 40rem;}
 }

@@ -7,6 +7,7 @@ import OurApp from '../OurApp/OurApp';
 import './Home.css'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Category from '../Category/Category';
 
 const Home = () => {
     useTitle('Home');
@@ -19,6 +20,7 @@ const Home = () => {
             <div data-aos="fade-left">
             <Gallery></Gallery>
             </div>
+            <Category></Category>
             <OurApp></OurApp>
             <Contact></Contact>
         </main>
