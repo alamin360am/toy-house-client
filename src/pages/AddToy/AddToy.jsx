@@ -20,7 +20,20 @@ const AddToy = () => {
         const description = form.description.value;
 
         const data = {name, seller, seller_email, sub_category, price, ratings, Quantity, description, photo};
-        console.log(data);
+        
+        fetch('http://localhost:5000/toys', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+
+
     }
     return (
         <section className='section-add-toy'>
