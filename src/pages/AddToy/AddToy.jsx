@@ -68,11 +68,11 @@ const AddToy = () => {
                     </div>
                     <div className="input">
                         <label htmlFor="seller-name">Seller Name</label>
-                        <input type="text" name="seller_name" id="seller-name" defaultValue={user?.displaName? user.displaName : "N/A"} disabled/>
+                        <input type="text" name="seller_name" id="seller-name" defaultValue={user?.displayName} disabled/>
                     </div>
                     <div className="input">
                         <label htmlFor="seller-email">Seller Email</label>
-                        <input type="text" name="seller_email" id="seller-email" defaultValue={user?.email? user.email : "N/A"} disabled/>
+                        <input type="text" name="seller_email" id="seller-email" defaultValue={user?.email} disabled/>
                     </div>
                     <div className="input">
                         <label htmlFor="sub-category">Sub Category</label>

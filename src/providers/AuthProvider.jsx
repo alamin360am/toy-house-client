@@ -22,10 +22,12 @@ const AuthProvider = ({children}) => {
     }
 
     const googleSignIn = () => {
+        setLoading(true)
         return signInWithPopup(auth, Provider)
     }
 
     const logOut = () => {
+        setLoading(true)
         return signOut(auth);
     }
 
