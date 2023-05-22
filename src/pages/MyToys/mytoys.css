@@ -1,0 +1,18 @@
+.my-toy {
+    padding: 2rem;
+    background-color: #dbe4ee;
+}
+
+.info-flex {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-flex .btn-dlt {
+    background-color: #ff4848;
+}
+
+.info-flex .btn-dlt:hover {
+    background-color: #eb1b1b;
+}

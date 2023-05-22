@@ -13,7 +13,7 @@ const Cars = (props) => {
                 <p className="ratings">Ratings: <span>{ratings}</span></p>
                 <p className="price">Price: $ <span>{price}</span></p>
             </div>
-            <Link to={`/toy/${_id}`} className="btn">View Details</Link>
+            <Link to={`/toys/${_id}`} className="btn">View Details</Link>
         </div>
     );
 };

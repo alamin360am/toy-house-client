@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import './addtoy.css';
 import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AddToy = () => {
 
@@ -43,7 +44,15 @@ const AddToy = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            alert("Toy Added successfully")
+            Swal.fire({
+                title: 'Toy added successfully',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
         })
 
 

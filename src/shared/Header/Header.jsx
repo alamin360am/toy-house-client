@@ -22,10 +22,10 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="nav-logo">
+        <Link to='/' className="nav-logo">
           <img src={logo} alt="" />
           <span>Toy House</span>
-        </div>
+        </Link>
         <div onClick={handleClick} className="icon-box">
           {condition ? (
             <FontAwesomeIcon icon={faClose} className="icon"></FontAwesomeIcon>
