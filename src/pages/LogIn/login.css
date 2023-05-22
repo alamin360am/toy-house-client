@@ -1,94 +1,105 @@
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 .section-auth {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #dbe4ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #dbe4ee;
 }
 
 .section-auth .icon-box {
-    background-color: #00296B;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    border: 1.5rem solid #a7c9ff;
+  background-color: #00296b;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 1.5rem solid #a7c9ff;
 }
 
 .section-auth .icon {
-    color: #f0f8ff;
-    font-size: 10rem;
+  color: #f0f8ff;
+  font-size: 10rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 form input,
 form textarea {
-    border: none;
-    outline: none;
-    padding: 1.4rem;
-    padding-left: 4.5rem;
-    width: 50rem;
-    font-size: 1.6rem;
-    border-radius: 5px;
-    background-color: rgb(232, 240, 254);
+  border: none;
+  outline: none;
+  padding: 1.4rem;
+  padding-left: 4.5rem;
+  width: 50rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  background-color: #e8f0fe;
 }
 
-form input:focus,
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus,
 form textarea:focus {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 form p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .input-field {
-    position: relative;
+  position: relative;
 }
 
 .input-field label {
-    position: absolute;
-    top: 50%;
-    left: 2rem;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translate(-50%, -50%);
 }
 
 .input-field label .input-icon {
-    font-size: 2rem;
-    color: #00296B;
+  font-size: 2rem;
+  color: #00296b;
 }
 
 .google {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid #dc2f02;
-    margin-top: 2rem;
-    padding: 1rem 5rem;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #dc2f02;
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+  cursor: pointer;
 }
 
 .google img {
-    width: 3rem;
+  width: 3rem;
 }
 
 @media screen and (max-width: 768px) {
-    .section-auth .icon-box {
-        width: 15rem;
-        height: 15rem;
-    }
-    .section-auth .icon {font-size: 7rem;}
-    form input, form textarea {width: 40rem;}
+  form input,
+  form textarea {
+    width: 100%;
+  }
+  .section-auth .icon-box {
+    width: 15rem;
+    height: 15rem;
+  }
+  .section-auth .icon {
+    font-size: 7rem;
+  }
+  form input,
+  form textarea {
+    width: 40rem;
+  }
 }

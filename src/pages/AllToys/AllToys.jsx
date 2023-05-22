@@ -1,13 +1,21 @@
-import { useLoaderData } from "react-router-dom";
 import "./alltoys.css";
 import Toy from "./Toy";
 import useTitle from "../../hooks/useTitle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const AllToys = () => {
-  const allToys = useLoaderData();
   useTitle("All Toys");
+
+  const [allToys, setAllToys] = useState([]);
   const [condition, setCondition] = useState(true);
+
+  useEffect(()=>{
+    fetch('http://localhost:5000/toys')
+    .then(res => res.json())
+    .then(data => setAllToys(data))
+  },[]);
+
+  console.log(allToys.name);
 
   const toy20 = allToys.slice(0, 20);
 
@@ -15,8 +23,21 @@ const AllToys = () => {
     setCondition(false);
   };
 
+  const handleSearch = (event) =>{
+    event.preventDefault();
+    setCondition(true);
+    const searchName = event.target.search.value;
+    const result = allToys.filter(toys => toys.name == searchName);
+    setAllToys(result);
+  }
+
   return (
     <section className="all-toys">
+      <h2 className="primary-heading">All Toys</h2>
+      <form onSubmit={handleSearch}>
+        <input type="text" placeholder="Search" name="search"/>
+        <input type="submit" value="Search" className="btn" />
+      </form>
       <div className="grid col-4">
         {condition == false
           ? allToys.map((toy) => <Toy key={toy._id} toy={toy}></Toy>)
