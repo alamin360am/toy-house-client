@@ -19,6 +19,7 @@ const MyToys = () => {
 
     return (
         <section className='section-my-toy'>
+            <h2 className="primary-heading">My Toys</h2>
             <div className="grid col-2">
                 {
                     toys.map(toy=> <MyToy key={toy._id} toy={toy}></MyToy>)
