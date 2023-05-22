@@ -3,7 +3,7 @@
     align-items: center;
     gap: 2rem;
     background-color: #f8edeb;
-    height: calc(100vh - 9rem);
+    height: 100vh;
 }
 
 .banner-img {
@@ -34,7 +34,7 @@
         flex-direction: column-reverse;
     }
     .banner-img {
-        width: 100%;
+        width: 90%;
     }
     
     .banner-info {

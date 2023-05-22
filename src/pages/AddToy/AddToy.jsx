@@ -2,9 +2,10 @@ import { useContext } from 'react';
 import './addtoy.css';
 import { AuthContext } from '../../providers/AuthProvider';
 import Swal from 'sweetalert2';
+import useTitle from '../../hooks/useTitle';
 
 const AddToy = () => {
-
+    useTitle("Add A Toy")
     const {user} = useContext(AuthContext);
 
     const handleUpload = event => {

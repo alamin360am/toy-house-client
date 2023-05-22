@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./login.css";
 import { faEnvelope, faUser } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import google from "./../../../public/icon/google.png";
 import useTitle from "../../hooks/useTitle";
@@ -11,12 +11,22 @@ import { AuthContext } from "../../providers/AuthProvider";
 const LogIn = () => {
   useTitle("Log In");
 
-  const {signIn, googleSignIn} = useContext(AuthContext);
+  const { signIn, googleSignIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
 
   const googleSign = () => {
-    googleSignIn();
-  }
-
+    googleSignIn()
+    .then((result) => {
+      const user = result.user;
+      console.log(user);
+      navigate(from);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  };
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -25,13 +35,14 @@ const LogIn = () => {
     const password = form.password.value;
 
     signIn(email, password)
-    .then(result =>{
-      const user = result.user;
-      console.log(user);
-    })
-    .catch(error => {
-      console.log(error);
-    })
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        navigate(from);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -76,7 +87,7 @@ const LogIn = () => {
         </p>
         <input type="submit" value="Log In" className="btn" />
       </form>
-      <Link to="/all-toys" onClick={googleSign} className="google">
+      <Link onClick={googleSign} className="google">
         <img src={google} alt="" />
         <p>Log in with Google</p>
       </Link>
