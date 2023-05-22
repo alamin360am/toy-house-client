@@ -22,6 +22,7 @@ const AddToy = () => {
         const description = form.description.value;
 
         const data = {name, seller, seller_email, sub_category, price, ratings, Quantity, description, photo};
+
         
         fetch('http://localhost:5000/toys', {
             method: "POST",
@@ -77,7 +78,11 @@ const AddToy = () => {
                     </div>
                     <div className="input">
                         <label htmlFor="sub-category">Sub Category</label>
-                        <input type="text" name="sub_category" id="sub-category" required/>
+                        <select name="sub_category" id="sub-category">
+                            <option value="Car">Car</option>
+                            <option value="Bike">Bike</option>
+                            <option value="Ship">Ship</option>
+                        </select>
                     </div>
                     <div className="input">
                         <label htmlFor="price">Price</label>

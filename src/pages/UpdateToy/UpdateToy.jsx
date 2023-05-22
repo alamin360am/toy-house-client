@@ -15,7 +15,7 @@ const UpdateToy = () => {
     description,
     sub_category,
   } = toy;
-  
+
   useTitle(`Update - ${name}`);
 
   const handleUpdate = (event) => {
@@ -90,13 +90,11 @@ const UpdateToy = () => {
           </div>
           <div className="input">
             <label htmlFor="sub-category">Sub Category</label>
-            <input
-              type="text"
-              name="sub_category"
-              id="sub-category"
-              required
-              defaultValue={sub_category}
-            />
+            <select name="sub_category" id="sub-category" defaultValue={sub_category}>
+              <option value="Car">Car</option>
+              <option value="Bike">Bike</option>
+              <option value="Ship">Ship</option>
+            </select>
           </div>
           <div className="input">
             <label htmlFor="price">Price</label>

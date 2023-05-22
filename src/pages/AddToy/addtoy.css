@@ -6,3 +6,11 @@
     display: block;
    margin-bottom: 1.5rem;
 }
+select,
+select option {
+    outline: none;
+    border: none;
+    width: 50rem;
+    padding: 1.5rem;
+    background: #e8f0fe;
+}
