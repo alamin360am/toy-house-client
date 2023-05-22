@@ -1,7 +1,10 @@
 // import Swal from 'sweetalert2';
+import { Link } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 import "./mytoys.css";
 
 const MyToy = ({ toy }) => {
+  useTitle("My Toys")
   const {
     _id,
     name,
@@ -14,15 +17,20 @@ const MyToy = ({ toy }) => {
     description,
   } = toy;
 
-  const handleDelete = (_id) => {
-    console.log(_id);
-    fetch(`http://localhost:5000/toys/${_id}`, {
-      method: 'DELETE',
-    })
-      .then((res) => res.json())
-      .then((data) => {
+  const handleDelete = (id) => {
+    console.log(id);
+    const proceed = confirm("Are you sure to Delete?");
+    console.log(`http://localhost:5000/added_toy/${id}`);
+    if(proceed) {
+      fetch(`http://localhost:5000/added_toy/${id}`, {
+        method: 'DELETE'
+      })
+      .then(res => res.json())
+      .then(data => {
         console.log(data);
-      });
+      })
+    }
+    
   };
 
   return (
@@ -49,7 +57,7 @@ const MyToy = ({ toy }) => {
           </p>
         </div>
         <div className="info-flex">
-          <button className="btn">Update</button>
+          <Link to={`/update/${_id}`} className="btn">Update</Link>
           <button onClick={() => handleDelete(_id)} className="btn btn-dlt">
             Delete
           </button>
