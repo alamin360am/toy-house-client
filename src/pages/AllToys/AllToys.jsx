@@ -9,7 +9,7 @@ const AllToys = () => {
   useTitle("All Toys");
   const [condition, setCondition] = useState(true);
 
-  const toy20 = allToys.slice(0, 19);
+  const toy20 = allToys.slice(0, 20);
 
   const handleClick = () => {
     setCondition(false);
@@ -18,11 +18,11 @@ const AllToys = () => {
   return (
     <section className="all-toys">
       <div className="grid col-4">
-        {condition
+        {condition == false
           ? allToys.map((toy) => <Toy key={toy._id} toy={toy}></Toy>)
-          : toy20.map((toy) => <Toy key={toy._id} toy={toy}></Toy>)}
+          : toy20.map((toy2) => <Toy key={toy2._id} toy={toy2}></Toy>)}
       </div>
-      {condition ? (
+      {condition == false ? (
         ""
       ) : (
         <button onClick={handleClick} className="btn">

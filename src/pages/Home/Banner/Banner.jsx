@@ -10,7 +10,7 @@ const Banner = () => {
                 <p className="description">
                     You can buy any kind of car toy from our website. Very easy to buy any product from our website
                 </p>
-                <Link className='btn'>See All Toy</Link>
+                <Link to='/all-toys' className='btn'>See All Toy</Link>
             </div>
             <div className="banner-img">
                 <img src={banner} alt="" />

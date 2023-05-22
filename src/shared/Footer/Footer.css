@@ -4,7 +4,7 @@ footer {
     color: #fff;
 }
 
-footer.grid {
+footer .grid {
     place-items: center;
 }
 
@@ -33,6 +33,10 @@ footer .social .links img {
     filter: brightness(0.5);
     opacity: 50%;
     transition: all 0.4s;
+}
+
+footer p {
+    text-align: center;
 }
 
 footer .social .links img:hover {

@@ -76,10 +76,10 @@ const LogIn = () => {
         </p>
         <input type="submit" value="Log In" className="btn" />
       </form>
-      <div onClick={googleSign} className="google">
+      <Link to="/all-toys" onClick={googleSign} className="google">
         <img src={google} alt="" />
         <p>Log in with Google</p>
-      </div>
+      </Link>
     </section>
   );
 };
