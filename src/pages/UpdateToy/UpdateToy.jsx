@@ -40,7 +40,7 @@ const UpdateToy = () => {
     };
     console.log(data);
 
-    fetch(`http://localhost:5000/toys/${_id}`, {
+    fetch(`https://toy-house-server-orcin.vercel.app/toys/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -52,7 +52,7 @@ const UpdateToy = () => {
         console.log(data);
       });
 
-    fetch(`http://localhost:5000/added_toy/${_id}`, {
+    fetch(`https://toy-house-server-orcin.vercel.app/added_toy/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

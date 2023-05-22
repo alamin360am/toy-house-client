@@ -9,7 +9,7 @@ const MyToys = () => {
     const {user} = useContext(AuthContext);
     const [toys, setToys] = useState([])
 
-    const url = `http://localhost:5000/added_toy?seller_email=${user.email}`;
+    const url = `https://toy-house-server-orcin.vercel.app/added_toy?seller_email=${user.email}`;
 
     useEffect(()=>{
         fetch(url)

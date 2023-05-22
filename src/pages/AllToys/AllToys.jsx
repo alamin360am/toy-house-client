@@ -10,7 +10,7 @@ const AllToys = () => {
   const [condition, setCondition] = useState(true);
 
   useEffect(()=>{
-    fetch('http://localhost:5000/toys')
+    fetch('https://toy-house-server-orcin.vercel.app/toys')
     .then(res => res.json())
     .then(data => setAllToys(data))
   },[]);

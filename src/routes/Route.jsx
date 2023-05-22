@@ -49,12 +49,12 @@ const router = createBrowserRouter([
         {
           path: '/toys/:id',
           element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-house-server-orcin.vercel.app/toys/${params.id}`)
         },
         {
           path: '/update/:id',
           element: <UpdateToy></UpdateToy>,
-          loader: ({params}) => fetch(`http://localhost:5000/added_toy/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-house-server-orcin.vercel.app/added_toy/${params.id}`)
         }
       ]
     },

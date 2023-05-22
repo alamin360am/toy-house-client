@@ -20,9 +20,9 @@ const MyToy = ({ toy }) => {
   const handleDelete = (id) => {
     console.log(id);
     const proceed = confirm("Are you sure to Delete?");
-    console.log(`http://localhost:5000/added_toy/${id}`);
+    console.log(`https://toy-house-server-orcin.vercel.app/added_toy/${id}`);
     if(proceed) {
-      fetch(`http://localhost:5000/added_toy/${id}`, {
+      fetch(`https://toy-house-server-orcin.vercel.app/added_toy/${id}`, {
         method: 'DELETE'
       })
       .then(res => res.json())

@@ -24,7 +24,7 @@ const AddToy = () => {
         const data = {name, seller, seller_email, sub_category, price, ratings, Quantity, description, photo};
 
         
-        fetch('http://localhost:5000/toys', {
+        fetch('https://toy-house-server-orcin.vercel.app/toys', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -36,7 +36,7 @@ const AddToy = () => {
             console.log(data);
         })
 
-        fetch('http://localhost:5000/added_toy', {
+        fetch('https://toy-house-server-orcin.vercel.app/added_toy', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
